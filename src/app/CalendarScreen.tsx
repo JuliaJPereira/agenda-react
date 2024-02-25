@@ -10,8 +10,10 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Icon from '@material-ui/core/Icon';
 import Avatar from '@material-ui/core/Avatar';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import PersonIcon from '@material-ui/icons/Person';
 
 const DAYS_OF_WEEK = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'];
 
@@ -52,18 +54,18 @@ export function CalendarScreen() {
         >
           <Box>
             <IconButton aria-label="Mês anterior">
-              <Icon>chevron_left</Icon>
+              <ChevronLeftIcon />
             </IconButton>
             <IconButton aria-label="Próximo mês">
-              <Icon>chevron_right</Icon>
+              <ChevronRightIcon />
             </IconButton>
           </Box>
           <Box style={{ flex: '1', marginLeft: '16px' }} component="h3">
             Junho de 2021
           </Box>
           <IconButton aria-label="Usuário">
-            <Avatar>
-              <Icon>person</Icon>
+            <Avatar style={{ backgroundColor: 'grey' }}>
+              <PersonIcon />
             </Avatar>
           </IconButton>
         </Box>
